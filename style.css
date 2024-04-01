@@ -1,0 +1,147 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Segoe UI","Helvetica Neue",Arial,sans-serif;
+   font-weight: 500;
+}
+
+body {
+   background-color: #f0f2f5;
+}
+
+header {
+   background-color: white;
+   height: 56px;
+   display: flex;
+   justify-content: space-between;
+   padding-inline: 8px;
+   width: 100%;
+   position: fixed;
+   
+}
+
+/* navbar */
+nav.left {
+   
+   width: 320px;
+   display: flex;
+   gap: 2px;
+   align-items: center;
+   
+}
+
+.searchbox {
+   display: flex  ;
+   align-items: center;
+   justify-content: start;
+   background-color: #f0f2f5;
+   border-radius: 40px;
+}
+
+.searchicon {
+  width: 40px;
+}
+
+nav.left input {  
+   height: 40px;
+   border: none;
+   border-radius: 40px;
+   padding-inline: 8px;
+   font-size: 15px;
+   font-weight: 400;
+   outline: none;
+   flex-grow: 1;
+   background-color: #f0f2f5;
+}
+
+nav.center {  
+   /* flex-grow: 1; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+}
+
+nav.center .boxicon {
+   width: 130px;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+   color: #65676b;;
+   margin: 4px;
+
+}
+
+.boxicon:hover {
+   cursor: pointer;
+   background-color: #d7dadf;
+   border-radius: 8px;
+}
+
+nav.center .active {
+   width: 130px;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   color: #1877F2;;
+   border-bottom: 3px solid #1877F2;
+   
+}
+
+
+nav.right {
+   width: 320px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 8px;
+   
+}
+
+nav.right .roundicon {
+   width: 40px;
+   height: 40px;
+   background-color: #e4e6eb;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   overflow: hidden;
+   color: #65676b;
+   
+}
+
+nav.right .roundicon:hover {
+   cursor: pointer;
+   background-color: #d7dadf;
+}
+
+/* main */
+
+.Main-wrapper {
+   min-height: 100vh;
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.sidebar-left {
+   border: 1px dashed blue;
+   min-height: 100vh;
+   flex-basis: 360px;
+}
+
+.newsfeed {
+   border: 1px dashed blue;
+   min-height: 100vh;
+   flex-basis: 680px;
+}
+
+.sidebar-right {
+   border: 1px dashed blue;
+   min-height: 100vh;
+   flex-basis: 360px;
+}
+
+
